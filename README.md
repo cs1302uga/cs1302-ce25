@@ -47,11 +47,12 @@ command depends on your present working directory), then please note that contex
       
       Add and commit the `.gitignore` file to the repository.
       
-   1. Update the POM so that the project works with Java 8. After that, use Git to track the `pom.xml`, 
-      then commit it to the repository, then add and commit the `pom.xml` file to the repository.
+   1. Update the POM so that the project works with Java 8. After that, add and commit the `pom.xml` file to 
+      the repository.
    
    1. Delete the Maven-generated driver (i.e., `src/main/java/cs1302/ce25/App.java`) and the unit test files 
-      (i.e., everything under `src/test/java`). Finally, add and commit the `src` directory to the repository.
+      (i.e., everything under `src/test/java`). We won't add the `src` folder to the repository at this time
+      because it only contains empty subdirectories. Git will not track empty directories.
    
 ## Exercise Steps
 
