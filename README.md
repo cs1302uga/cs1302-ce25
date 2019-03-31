@@ -73,7 +73,7 @@ command depends on your present working directory), then please note that contex
    ```
    
 1. Create a `cs1302.ce24.Find` class based on code below that provides a
-   an implementation of the Unix `find` command:
+   a recursive implementation of the Unix `find` command:
 
    ```java
    public class Find {
@@ -133,8 +133,38 @@ command depends on your present working directory), then please note that contex
 
 **CHECKPOINT**
 
-1. Create a `cs1302.ce24.Tree` class based on code below that provides a
-   an implementation of the Unix `find` command:
+1. For this checkpoint, adapt your `Find.java` code to create a 
+   `cs1302.ce24.Tree` class that provides a recursive implementation of the 
+   Unix [`Tree`](https://en.wikipedia.org/wiki/Tree_(command)) command. 
+   Here is an example:
+   
+   ```
+   $ tree src
+   ```
+   
+   ```
+   |---src
+   |   |---src/main
+   |   |   |---src/main/java
+   |   |   |   |---src/main/java/cs1302
+   |   |   |   |   |---src/main/java/cs1302/ce25
+   |   |   |   |   |   |---src/main/java/cs1302/ce25/Find.java
+   |   |   |   |   |   |---src/main/java/cs1302/ce25/Tree.java
+   ```
+   
+   Remember, you can add additional parameters to methods, as needed, to
+   help you accomplish a given sub-problem.
+   
+1. **Next, use Maven to compile and the code.** Please use the `exec:java` phase to run.
+   You will need to specify the command-line arguments as a space-separated
+   string with the `-Dexec.args` option (e.g., `-Dexec.args="src"`) in addition
+   to providing the `-Dexec.mainClass` option. 
+   
+   * Once you figure out how to run it, please write down that command
+     in your notes.
+   
+   * After you've confirmed that it compiles and runs, please add and commit
+     your changes to the repository.
 
 <hr/>
 
