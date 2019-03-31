@@ -152,6 +152,18 @@ command depends on your present working directory), then please note that contex
    |   |   |   |   |   |---src/main/java/cs1302/ce25/Tree.java
    ```
    
+   ```
+   $ tree src/main/java
+   ```
+   
+   ```
+   |---src/main/java
+   |   |---src/main/java/cs1302
+   |   |   |---src/main/java/cs1302/ce25
+   |   |   |   |---src/main/java/cs1302/ce25/Find.java
+   |   |   |   |---src/main/java/cs1302/ce25/Tree.java
+   ```
+   
    Remember, you can add additional parameters to methods, as needed, to
    help you accomplish a given sub-problem.
    
