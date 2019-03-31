@@ -144,12 +144,12 @@ command depends on your present working directory), then please note that contex
    
    ```
    |---src
-   |   |---src/main
-   |   |   |---src/main/java
-   |   |   |   |---src/main/java/cs1302
-   |   |   |   |   |---src/main/java/cs1302/ce25
-   |   |   |   |   |   |---src/main/java/cs1302/ce25/Find.java
-   |   |   |   |   |   |---src/main/java/cs1302/ce25/Tree.java
+   |   |---main
+   |   |   |---java
+   |   |   |   |---cs1302
+   |   |   |   |   |---ce25
+   |   |   |   |   |   |---Find.java
+   |   |   |   |   |   |---Tree.java
    ```
    
    ```
@@ -157,11 +157,11 @@ command depends on your present working directory), then please note that contex
    ```
    
    ```
-   |---src/main/java
-   |   |---src/main/java/cs1302
-   |   |   |---src/main/java/cs1302/ce25
-   |   |   |   |---src/main/java/cs1302/ce25/Find.java
-   |   |   |   |---src/main/java/cs1302/ce25/Tree.java
+   |---java
+   |   |---cs1302
+   |   |   |---ce25
+   |   |   |   |---Find.java
+   |   |   |   |---Tree.java
    ```
    
    Remember, you can add additional parameters to methods, as needed, to
