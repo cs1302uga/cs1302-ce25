@@ -178,6 +178,9 @@ command depends on your present working directory), then please note that contex
    * After you've confirmed that it compiles and runs, please add and commit
      your changes to the repository.
 
+**CHECKPOINT**
+
+
 <hr/>
 
 [![License: CC BY-NC-ND 4.0](https://img.shields.io/badge/License-CC%20BY--NC--ND%204.0-lightgrey.svg)](http://creativecommons.org/licenses/by-nc-nd/4.0/)
