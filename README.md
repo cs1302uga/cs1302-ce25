@@ -55,6 +55,22 @@ command depends on your present working directory), then please note that contex
    
 ## Exercise Steps
 
+1. For this checkpoint, you will implement your own version of the Unix `find` command.
+   Here is an example:
+   
+   ```
+   $ find src
+   ```
+   
+   ```
+   src
+   src/main
+   src/main/java
+   src/main/java/cs1302
+   src/main/java/cs1302/ce25
+   src/main/java/cs1302/ce25/Find.java
+   ```
+   
 1. Create a `cs1302.ce24.Find` class based on code below that provides a
    an implementation of the Unix `find` command:
 
@@ -78,7 +94,15 @@ command depends on your present working directory), then please note that contex
    You will need to manually setup the package statement and imports.
     
 1. **Next, use Maven to compile and the code.** Please use the `exec:java` phase to run.
-   After you've confirmed that it compiles and runs, please add and commit `Find.java`.
+   You will need to specify the command-line arguments as a space-separated
+   string with the `-Dexec.args` option (e.g., `-Dexec.args="src"`) in addition
+   to providing the `-Dexec.mainClass` option. 
+   
+   * Once you figure out how to run it, please write down that command
+     in your notes.
+   
+   * After you've confirmed that it compiles and runs, please add and commit
+     your changes to the repository.
 
 1. Use a stream to map all of the command-line arguments in the `main` method 
    to new [`File`](https://docs.oracle.com/javase/8/docs/api/java/io/File.html)
@@ -97,16 +121,20 @@ command depends on your present working directory), then please note that contex
       find: `%s': No such file or directory
       ```
       
-   1. If the file does exist, print the pathname string for the `File` object
-      to standard output, then, if the `File` object refers to a directory, 
-      use recusion to do the same for all files in the directory. For this
-      part, you may use a stream or a for-each loop.
+   1. the file or directory denoted by the `File` object does exist, print the 
+      pathname string for the `File` objectc to standard output. Additionally,
+      if the `File` object refers to a directory, then **use recusion** to do the 
+      same for all files in the directory. For this part, you may use a stream or a 
+      for-each loop.
+      
+   After verifying that your code compiles and works using Maven, 
+   please stage and commit your changes to the repository.
 
 **CHECKPOINT**
-implement `DownUp(String str)`. Give example execution with "Dawgs" as input.
-**CHECKPOINT**
-implement `public static List<String> split(String str, String delim);`
-**CHECKPOINT**
+
+1. Create a `cs1302.ce24.Tree` class based on code below that provides a
+   an implementation of the Unix `find` command:
+
 <hr/>
 
 [![License: CC BY-NC-ND 4.0](https://img.shields.io/badge/License-CC%20BY--NC--ND%204.0-lightgrey.svg)](http://creativecommons.org/licenses/by-nc-nd/4.0/)
