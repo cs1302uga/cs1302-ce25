@@ -21,7 +21,7 @@ command depends on your present working directory), then please note that contex
 ### Getting Started
 
 1. Using Maven, create a project directory for this exercise called `cs1302-ce25` with a primary 
-   package called `cs1302.ce54`.
+   package called `cs1302.ce25`.
 
 1. Change into the `cs1302-ce25` directory that you just created using Maven, then do the
    following:
@@ -72,7 +72,7 @@ command depends on your present working directory), then please note that contex
    src/main/java/cs1302/ce25/Find.java
    ```
    
-1. Create a `cs1302.ce24.Find` class based on code below that provides a
+1. Create a `cs1302.ce25.Find` class based on code below that provides a
    a recursive implementation of the Unix `find` command:
 
    ```java
@@ -134,7 +134,7 @@ command depends on your present working directory), then please note that contex
 **CHECKPOINT**
 
 1. For this checkpoint, adapt your `Find.java` code to create a 
-   `cs1302.ce24.Tree` class that provides a recursive implementation of the 
+   `cs1302.ce25.Tree` class that provides a recursive implementation of the 
    Unix [`Tree`](https://en.wikipedia.org/wiki/Tree_(command)) command. 
    Here is an example:
    
