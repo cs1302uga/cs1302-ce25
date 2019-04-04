@@ -1,4 +1,4 @@
-# cs1302-ce25 - Applications of Recursion
+# cs1302-ce25 Applications of Recursion
 
 This class exercise futher explores the concept of [recursion](https://github.com/cs1302uga/cs1302-ce25).
 
