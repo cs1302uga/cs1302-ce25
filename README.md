@@ -193,14 +193,14 @@ command depends on your present working directory), then please note that contex
    that are the same have been reduced to a single character. 
    Here are some examples:
 
-   | Example                   | Result  |
-   |---------------------------|---------|
-   | `shrinkString("yyzzza")`  | `"yza"` |
-   | `shrinkString("abbbcdd")` | `"abcd" |
-   | `shrinkString("Hello")`   | `"Helo" |
-   | `shrinkString("abcd")`    | `"abcd" |
-   | `shrinkString("  ")`      | `" "`   |
-   | `shrinkString("")`        | `""`    |
+   | Example                   | Result   |
+   |---------------------------|----------|
+   | `shrinkString("yyzzza")`  | `"yza"`  |
+   | `shrinkString("abbbcdd")` | `"abcd"` |
+   | `shrinkString("Hello")`   | `"Helo"` |
+   | `shrinkString("abcd")`    | `"abcd"` |
+   | `shrinkString("  ")`      | `" "`    |
+   | `shrinkString("")`        | `""`     |
    
    In the `main` method, create an array of strings that contains the strings used in the
    eamples above. Next, create another method called `printShrunkString` with the
