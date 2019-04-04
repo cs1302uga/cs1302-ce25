@@ -181,6 +181,55 @@ command depends on your present working directory), then please note that contex
 
 **CHECKPOINT**
 
+1. For this checkpoint, you will implement a recursive method called `shrinkString`.
+   Create a `cs1302.ce25.ShrinkString` class that contains a `main` method as well
+   as the following method:
+   
+   ```java
+   public static String shrinkString(String str)
+   ```
+
+   Given a string, return recursively a "shrinked" string where adjacent characters 
+   that are the same have been reduced to a single character. 
+   Here are some examples:
+
+   | Example                   | Result  |
+   |---------------------------|---------|
+   | `shrinkString("yyzzza")`  | `"yza"` |
+   | `shrinkString("abbbcdd")` | `"abcd" |
+   | `shrinkString("Hello")`   | `"Helo" |
+   | `shrinkString("abcd")`    | `"abcd" |
+   | `shrinkString("  ")`      | `" "`   |
+   | `shrinkString("")`        | `""`    |
+   
+   In the `main` method, create an array of strings that contains the strings used in the
+   eamples above. Next, create another method called `printShrunkString` with the
+   following signature:
+   
+   ```java
+   public static printShrunkStrings(String[] array, int i)
+   ```
+   
+   Given an `array` and an index `i`, print the result of calling `shrinkString`
+   on the element at index `i`, then recursively print the remaining elements. You
+   may assume the first call provides a valid index `i`. You may not assume
+   the array is non-empty.
+   
+   In the `main` method, use your `printShrunkString` method to print the result 
+   of calling `shrinkString` on each element of the array.
+   
+1. **Use Maven to compile and run the code.** Please use the `exec:java` phase to run.
+   You will need to specify the command-line arguments as a space-separated
+   string with the `-Dexec.args` option (e.g., `-Dexec.args="src"`) in addition
+   to providing the `-Dexec.mainClass` option. 
+   
+   * Once you figure out how to run it, please write down that command
+     in your notes.
+   
+   * After you've confirmed that it compiles and runs, please add and commit
+     your changes to the repository.
+
+**CHECKPOINT**
 
 <hr/>
 
