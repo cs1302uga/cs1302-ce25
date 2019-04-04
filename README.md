@@ -1,6 +1,4 @@
-# cs1302-ce25
-
-> TODO QUOTE
+# cs1302-ce25 - Applications of Recursion
 
 This class exercise futher explores the concept of [recursion](https://github.com/cs1302uga/cs1302-ce25).
 
@@ -72,8 +70,8 @@ command depends on your present working directory), then please note that contex
    src/main/java/cs1302/ce25/Find.java
    ```
    
-1. Create a `cs1302.ce25.Find` class based on code below that provides a
-   a recursive implementation of the Unix `find` command:
+1. Create a `cs1302.ce25.Find` class based on code below that provides some
+   starter code for your recursive implementation of the Unix `find` command:
 
    ```java
    public class Find {
@@ -92,12 +90,15 @@ command depends on your present working directory), then please note that contex
    } // Find
    ```
    
-   You will need to manually setup the package statement and imports.
+   Before this code will compile, you will need to manually setup the package 
+   statement and imports.
     
-1. **Next, use Maven to compile and the code.** Please use the `exec:java` phase to run.
-   You will need to specify the command-line arguments as a space-separated
-   string with the `-Dexec.args` option (e.g., `-Dexec.args="src"`) in addition
-   to providing the `-Dexec.mainClass` option. 
+1. **Next, use Maven to compile and run the code.** You won't see any output at
+   this point. Please use the `exec:java` phase to run. To provide command-line
+   arguments to your program through maven, you will need to specify the 
+   command-line arguments as a space-separated
+   string with the `-Dexec.args` option (e.g., `-Dexec.args="src target"`) in 
+   addition to providing the `-Dexec.mainClass` option. 
    
    * Once you figure out how to run it, please write down that command
      in your notes.
@@ -167,7 +168,7 @@ command depends on your present working directory), then please note that contex
    Remember, you can add additional parameters to methods, as needed, to
    help you accomplish a given sub-problem.
    
-1. **Next, use Maven to compile and the code.** Please use the `exec:java` phase to run.
+1. **Next, use Maven to compile and run the code.** Please use the `exec:java` phase to run.
    You will need to specify the command-line arguments as a space-separated
    string with the `-Dexec.args` option (e.g., `-Dexec.args="src"`) in addition
    to providing the `-Dexec.mainClass` option. 
