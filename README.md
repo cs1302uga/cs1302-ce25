@@ -1,5 +1,7 @@
 # cs1302-ce25 Applications of Recursion
 
+![Approved for: Fall 2019](https://img.shields.io/badge/Approved%20for-Fall%202019-brightgreen)
+
 This class exercise futher explores the concept of [recursion](https://github.com/cs1302uga/cs1302-ce25).
 
 ## Course-Specific Learning Outcomes
