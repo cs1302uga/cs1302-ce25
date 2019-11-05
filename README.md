@@ -2,6 +2,13 @@
 
 This class exercise futher explores the concept of [recursion](https://github.com/cs1302uga/cs1302-ce25).
 
+## Course-Specific Learning Outcomes
+* **LO2.c:** Use recursion to solve a non-trivial problem in a software solution.
+* **LO5.b:** (Partial) Utilize a build tool such as Maven or Ant to create and manage a
+complex software solution involving external dependencies.
+* **LO7.b:** (Partial) Use stream-like operations (e.g., map, reduce, and filter in the Java Stream API) as an 
+alternative to iteration in solving problems. Observe the difference between resulting implementations.
+
 ## References and Prerequisites
 
 * [`java.io.File` API Documentation](https://docs.oracle.com/javase/8/docs/api/java/io/File.html)
