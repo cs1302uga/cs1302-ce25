@@ -137,10 +137,10 @@ Here is an example:
 
 **CHECKPOINT**
 
-1. For this checkpoint, adapt your `Find.java` code to create a 
-   `cs1302.ce25.Tree` class that provides a recursive implementation of the 
-   Unix [`Tree`](https://en.wikipedia.org/wiki/Tree_(command)) command. 
-   Here is an example:
+For this checkpoint, adapt your `Find.java` code to create a 
+`cs1302.ce25.Tree` class that provides a recursive implementation of the 
+Unix [`Tree`](https://en.wikipedia.org/wiki/Tree_(command)) command. 
+Here is an example:
    
    ```
    $ tree src
