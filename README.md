@@ -118,7 +118,7 @@ Here is an example:
    
 1. Implement the `printFile` method. 
 
-   1. If the file or directory denoted by the `File` object does not exists, then
+   1. If the file or directory denoted by the `File` object does not exist, then
       print an error similar to the following to standard error where `%s` denotes
       the pathname string for the `File` object:
       
@@ -126,7 +126,7 @@ Here is an example:
       find: `%s': No such file or directory
       ```
       
-   1. the file or directory denoted by the `File` object does exist, print the 
+   1. If the file or directory denoted by the `File` object does exist, print the 
       pathname string for the `File` objectc to standard output. Additionally,
       if the `File` object refers to a directory, then **use recusion** to do the 
       same for all files in the directory. For this part, you may use a stream or a 
