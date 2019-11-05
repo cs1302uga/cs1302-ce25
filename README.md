@@ -54,8 +54,8 @@ command depends on your present working directory), then please note that contex
    
 ## Exercise Steps
 
-1. For this checkpoint, you will implement your own version of the Unix `find` command.
-   Here is an example:
+For this checkpoint, you will implement your own version of the Unix `find` command.
+Here is an example:
    
    ```
    $ find src
@@ -84,6 +84,7 @@ command depends on your present working directory), then please note that contex
            if (args.length == 0) {
                args = new String[] { "." }; // default to "."
            } // if
+           Arrays.stream(args).forEach(System.out::println);
            // TODO implement stream code
        } // main
 
@@ -93,25 +94,27 @@ command depends on your present working directory), then please note that contex
    Before this code will compile, you will need to manually setup the package 
    statement and imports.
     
-1. **Next, use Maven to compile and run the code.** You won't see any output at
-   this point. Please use the `exec:java` phase to run. To provide command-line
-   arguments to your program through maven, you will need to specify the 
-   command-line arguments as a space-separated
-   string with the `-Dexec.args` option (e.g., `-Dexec.args="src target"`) in 
-   addition to providing the `-Dexec.mainClass` option. 
+1. **Next, use Maven to compile and run the code.** If executed properly, the program
+   will print all command-line arguments (each on its own line). Please use the 
+   `exec:java` phase to run. To provide command-line arguments to your program 
+   through maven, you will need to specify the command-line arguments as a 
+   space-separated string with the `-Dexec.args` option 
+   (e.g., `-Dexec.args="src target"`) in addition to providing the `-Dexec.mainClass` 
+   option. 
    
-   * Once you figure out how to run it, please write down that command
+   * Once you figure out how to run it, please write down the full maven command
      in your notes.
    
    * After you've confirmed that it compiles and runs, please add and commit
      your changes to the repository.
 
-1. Use a stream to map all of the command-line arguments in the `main` method 
+1. Use streams in the `main` method to map all of the command-line arguments
    to new [`File`](https://docs.oracle.com/javase/8/docs/api/java/io/File.html)
    objects, then call `printFile` for-each of them. For testing 
    purposes, you may want to put some kind of print statement in the `printFile` method.
-   After verifying that your code compiles and works using Maven, 
-   please add and commit `Find.java`.
+   At this point, you can remove (or comment out) the line in `main` that prints all command-line
+   arguments to the console. After verifying that your code compiles and works using Maven, 
+   please add and commit `Find.java`. 
    
 1. Implement the `printFile` method. 
 
