@@ -206,11 +206,11 @@ Here is an example:
    | `shrinkString("")`        | `""`     |
    
    In the `main` method, create an array of strings that contains the strings used in the
-   eamples above. Next, create another method called `printShrunkString` with the
+   examples above. Next, create another method called `printShrunkString` with the
    following signature:
    
    ```java
-   public static printShrunkStrings(String[] array, int i)
+   public static void printShrunkStrings(String[] array, int i)
    ```
    
    Given an `array` and an index `i`, print the result of calling `shrinkString`
