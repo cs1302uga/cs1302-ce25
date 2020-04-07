@@ -150,8 +150,13 @@ Here is an example of its execution (which assumes there's a file called `Find.j
 
 For this checkpoint, adapt your `Find.java` code to create a 
 `cs1302.ce25.Tree` class that provides a recursive implementation of the 
-Unix [`Tree`](https://en.wikipedia.org/wiki/Tree_(command)) command. 
-Here is an example:
+Unix [`Tree`](https://en.wikipedia.org/wiki/Tree_(command)) command. **Note:**
+you can add additional parameters to methods, as needed, to help you accomplish 
+a given sub-problem.
+The `tree` command will work for you on Nike assuming you have properly set up your
+`checkstyle`. **Note:** running the command on Nike will look slightly different. We 
+modified the output to make it easier to implement. Here is how the output of
+your implementation (`cs1302.ce25.Tree`) should look:
    
    ```
    $ tree src
@@ -178,9 +183,6 @@ Here is an example:
    |   |   |   |---Find.java
    |   |   |   |---Tree.java
    ```
-   
-   Remember, you can add additional parameters to methods, as needed, to
-   help you accomplish a given sub-problem.
    
 1. **Next, use Maven to compile and run the code.** Please use the `exec:java` phase to run.
    You will need to specify the command-line arguments as a space-separated
