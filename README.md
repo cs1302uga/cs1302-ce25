@@ -29,8 +29,8 @@ command depends on your present working directory), then please note that contex
 
 ### Getting Started
 
-1. Using Maven, create a project directory for this exercise called `cs1302-ce25` with a primary 
-   package called `cs1302.ce25`.
+1. Using [Maven](https://github.com/cs1302uga/cs1302-tutorials/blob/master/maven.md#creating-a-project), 
+   create a project directory for this exercise called `cs1302-ce25` with a primary package called `cs1302.ce25`.
 
 1. Change into the `cs1302-ce25` directory that you just created using Maven, then do the
    following:
