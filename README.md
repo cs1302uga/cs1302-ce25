@@ -1,6 +1,8 @@
 # cs1302-ce25 Applications of Recursion
 
 ![Approved for: Fall 2019](https://img.shields.io/badge/Approved%20for-Fall%202019-brightgreen)
+<!--![Approved for: Spring 2020](https://img.shields.io/badge/Approved%20for-Spring%202020-blue)
+![Instruction: Online](https://img.shields.io/badge/Instruction-Online-important)-->
 
 This class exercise futher explores the concept of [recursion](https://github.com/cs1302uga/cs1302-ce25).
 
@@ -144,7 +146,7 @@ Here is an example:
    After verifying that your code compiles and works using Maven, 
    please stage and commit your changes to the repository.
 
-**CHECKPOINT**
+![CP](https://img.shields.io/badge/Checkpoint-1-success?style=for-the-badge)
 
 For this checkpoint, adapt your `Find.java` code to create a 
 `cs1302.ce25.Tree` class that provides a recursive implementation of the 
@@ -191,7 +193,7 @@ Here is an example:
    * After you've confirmed that it compiles and runs, please add and commit
      your changes to the repository.
 
-**CHECKPOINT**
+![CP](https://img.shields.io/badge/Checkpoint-2-success?style=for-the-badge)
 
 1. For this checkpoint, you will implement a recursive method called `shrinkString`.
    Create a `cs1302.ce25.ShrinkString` class that contains a `main` method as well
@@ -241,7 +243,35 @@ Here is an example:
    * After you've confirmed that it compiles and runs, please add and commit
      your changes to the repository.
 
-**CHECKPOINT**
+![CP](https://img.shields.io/badge/Checkpoint-3-success?style=for-the-badge)
+
+**Each student needs to individually submit their own work.**
+
+1. Create a plain text file called `SUBMISSION.md` directly inside this exercise
+   directory with the following information:
+
+   1. Your name and UGA ID number;
+   1. Collaborator names, if any; and
+   1. The weekly code (listed with the exercise on eLC).
+   
+   Here is an example:
+   
+   ```
+   1. Sally Smith (811-000-999)
+   2. Collaborators: Joe Allen, Stacie Mack
+   3. Weekly Code: replace-with-actual-code
+   ```
+
+1. Add and commit `SUBMISSION.md`. Also, do a final check to ensure your code 
+   passes the `checkstyle` audit, then stage and commit all changes, if needed.
+
+1. Change into the parent directory and use the `submit` command to submit this exercise to `cs1302a`:
+   
+   ```
+   $ submit cs1302-ce25 cs1302a
+   ```
+   
+![CP](https://img.shields.io/badge/Checkpoint-Submission-success?style=for-the-badge)
 
 <hr/>
 
