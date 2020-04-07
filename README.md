@@ -114,11 +114,10 @@ Here is an example of its execution (which assumes there's a file called `Find.j
    (e.g., `-Dexec.args="src target"`) in addition to providing the `-Dexec.mainClass` 
    option. 
    
-   * Once you figure out how to run it, please write down the full maven command
+   * Once you are able to successfully run the program, write down the full maven command
      in your notes.
    
-   * After you've confirmed that it compiles and runs, please add and commit
-     your changes to the repository.
+   * Make sure your code passes `checkstyle` then add and commit your changes to the repository.
 
 1. Use streams in the `main` method to map all of the command-line arguments
    to new [`File`](https://docs.oracle.com/javase/8/docs/api/java/io/File.html)
@@ -126,9 +125,9 @@ Here is an example of its execution (which assumes there's a file called `Find.j
    purposes, you may want to put some kind of print statement in the `printFile` method.
    At this point, you can remove (or comment out) the line in `main` that prints all command-line
    arguments to the console. After verifying that your code compiles and works using Maven, 
-   please add and commit `Find.java`. 
+   please add and commit `Find.java`.
    
-1. Implement the `printFile` method. 
+1. Implement the `printFile` method.
 
    1. If the file or directory denoted by the `File` object does not exist, then
       print an error similar to the following to standard error where `%s` denotes
@@ -139,8 +138,8 @@ Here is an example of its execution (which assumes there's a file called `Find.j
       ```
       
    1. If the file or directory denoted by the `File` object does exist, print the 
-      pathname string for the `File` objectc to standard output. Additionally,
-      if the `File` object refers to a directory, then **use recusion** to do the 
+      pathname string for the `File` object to standard output. Additionally,
+      if the `File` object refers to a directory, then **use recursion** to do the 
       same for all files in the directory. For this part, you may use a stream or a 
       for-each loop.
       
