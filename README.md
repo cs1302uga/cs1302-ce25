@@ -65,8 +65,9 @@ command depends on your present working directory), then please note that contex
    
 ## Exercise Steps
 
-For this checkpoint, you will implement your own version of the Unix `find` command.
-Here is an example:
+For this checkpoint, you will implement your own version of the Unix `find` command. You've been using this
+command in previous exercises.
+Here is an example of its execution (which assumes there's a file called `Find.java` in the `ce25` directory):
    
    ```
    $ find src
@@ -82,7 +83,9 @@ Here is an example:
    ```
    
 1. Create a `cs1302.ce25.Find` class based on code below that provides some
-   starter code for your recursive implementation of the Unix `find` command:
+   starter code for your recursive implementation of the Unix `find` command.
+   Before this code will compile, you will need to manually setup the package 
+   statement and imports.
 
    ```java
    public class Find {
@@ -101,13 +104,11 @@ Here is an example:
 
    } // Find
    ```
-   
-   Before this code will compile, you will need to manually setup the package 
-   statement and imports.
     
 1. **Next, use Maven to compile and run the code.** If executed properly, the program
    will print all command-line arguments (each on its own line). Please use the 
-   `exec:java` phase to run. To provide command-line arguments to your program 
+   [`exec:java` phase](https://github.com/cs1302uga/cs1302-tutorials/blob/master/maven.md#using-maven)
+   to run. To provide command-line arguments to your program 
    through maven, you will need to specify the command-line arguments as a 
    space-separated string with the `-Dexec.args` option 
    (e.g., `-Dexec.args="src target"`) in addition to providing the `-Dexec.mainClass` 
