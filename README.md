@@ -134,7 +134,7 @@ Here is an example of its execution (which assumes there's a file called `Find.j
       the pathname string for the `File` object:
       
       ```
-      find: `%s': No such file or directory
+      find: `%s`: No such file or directory
       ```
       
    1. If the file or directory denoted by the `File` object does exist, print the 
