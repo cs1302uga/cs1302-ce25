@@ -231,6 +231,12 @@ your implementation (`cs1302.ce25.Tree`) should look:
    may assume the first call provides a valid index `i`. You may not assume
    the array is non-empty.
    
+   **Before attempting to implement this method**, draw the recursion tree as we did in
+   the previous exercise. 
+   You can see the example [here](https://github.com/cs1302uga/cs1302-ce24/blob/master/README.md#recursion-tree).
+   Drawing the recursion tree first will help you identify the base case(s) and the 
+   recursive case(s). It's important to clearly understand the problem before implementing.
+   
    In the `main` method, use your `printShrunkString` method to print the result 
    of calling `shrinkString` on each element of the array.
    
