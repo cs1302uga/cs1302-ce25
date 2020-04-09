@@ -240,6 +240,10 @@ your implementation (`cs1302.ce25.Tree`) should look:
    In the `main` method, use your `printShrunkString` method to print the result 
    of calling `shrinkString` on each element of the array.
    
+1. In the `main` method, test your implementation of `shrinkString` by running it with all of the examples given 
+   in the table above. To make sure it's working properly, we recommend adding other cases as well. At the very 
+   least, your program needs to output the results of the calls in the above table.
+   
 1. **Use Maven to compile and run the code.** Please use the `exec:java` phase to run.
    You will need to specify the command-line arguments as a space-separated
    string with the `-Dexec.args` option (e.g., `-Dexec.args="src"`) in addition
