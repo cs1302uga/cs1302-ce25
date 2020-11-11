@@ -1,7 +1,6 @@
 # cs1302-ce25 Applications of Recursion
 
-![Approved for: Spring 2020](https://img.shields.io/badge/Approved%20for-Spring%202020-blue)
-![Instruction: Online](https://img.shields.io/badge/Instruction-Online-important)
+![Approved for: Fall 2020](https://img.shields.io/badge/Approved%20for-Fall%202020-blueviolet)
 
 This class exercise futher explores the concept of [recursion](https://github.com/cs1302uga/cs1302-ce25).
 
@@ -14,13 +13,13 @@ alternative to iteration in solving problems. Observe the difference between res
 
 ## References and Prerequisites
 
-* [`java.io.File` API Documentation](https://docs.oracle.com/javase/8/docs/api/java/io/File.html)
+* [`java.io.File` API Documentation](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/File.html)
 * [`CSCI 1302 Recursion Tutorial`](https://github.com/cs1302uga/cs1302-tutorials/blob/master/recursion.md)
 
 ## Questions
 
 In your notes, clearly answer the following questions. These instructions assume that you are 
-logged into the Nike server. 
+logged into the Odin server. 
 
 **NOTE:** If a step requires you to enter in a command, please provide in your notes the full 
 command that you typed to make the related action happen. If context is necessary (e.g., the 
@@ -55,7 +54,7 @@ command depends on your present working directory), then please note that contex
       
       Add and commit the `.gitignore` file to the repository.
       
-   1. Update the POM so that the project works with Java 8. After that, add and commit the `pom.xml` file to 
+   1. Update the POM so that the project works with Java 11. After that, add and commit the `pom.xml` file to 
       the repository.
    
    1. Delete the Maven-generated driver (i.e., `src/main/java/cs1302/ce25/App.java`) and the unit test files 
@@ -64,8 +63,11 @@ command depends on your present working directory), then please note that contex
    
 ## Exercise Steps
 
+### Checkpoint 1 Steps
+
 For this checkpoint, you will implement your own version of the Unix `find` command. You've been using this
 command in previous exercises.
+
 Here is an example of its execution (which assumes there's a file called `Find.java` in the `ce25` directory):
    
    ```
@@ -119,7 +121,7 @@ Here is an example of its execution (which assumes there's a file called `Find.j
    * Make sure your code passes `checkstyle` then add and commit your changes to the repository.
 
 1. Use streams in the `main` method to map all of the command-line arguments
-   to new [`File`](https://docs.oracle.com/javase/8/docs/api/java/io/File.html)
+   to new [`File`](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/File.html)
    objects, then call `printFile` for-each of them. For testing 
    purposes, you may want to put some kind of print statement in the `printFile` method.
    At this point, you can remove (or comment out) the line in `main` that prints all command-line
@@ -145,15 +147,21 @@ Here is an example of its execution (which assumes there's a file called `Find.j
    After verifying that your code compiles and works using Maven, 
    please stage and commit your changes to the repository.
 
-![CP](https://img.shields.io/badge/Checkpoint-1-success?style=for-the-badge)
+<hr/>
+
+![CP](https://img.shields.io/badge/Just%20Finished%20Checkpoint-1-success?style=for-the-badge)
+
+<hr/>
+
+### Checkpoint 2 Steps
 
 For this checkpoint, adapt your `Find.java` code to create a 
 `cs1302.ce25.Tree` class that provides a recursive implementation of the 
 Unix [`Tree`](https://en.wikipedia.org/wiki/Tree_(command)) command. **Note:**
 you can add additional parameters to methods, as needed, to help you accomplish 
 a given sub-problem.
-The `tree` command will work for you on Nike assuming you have properly set up your
-`checkstyle`. **Note:** running the command on Nike will look slightly different. We 
+The `tree` command will work for you on Odin assuming you have properly set up your
+`checkstyle`. **Note:** running the command on Odin will look slightly different. We 
 modified the output to make it easier to implement. Here is how the output of
 your implementation (`cs1302.ce25.Tree`) should look:
    
@@ -194,7 +202,13 @@ your implementation (`cs1302.ce25.Tree`) should look:
    * After you've confirmed that it compiles and runs, please add and commit
      your changes to the repository.
 
-![CP](https://img.shields.io/badge/Checkpoint-2-success?style=for-the-badge)
+<hr/>
+
+![CP](https://img.shields.io/badge/Just%20Finished%20Checkpoint-2-success?style=for-the-badge)
+
+<hr/>
+
+### Checkpoint 3 Steps
 
 1. For this checkpoint, you will implement a recursive method called `shrinkString`.
    Create a `cs1302.ce25.ShrinkString` class that contains a `main` method as well
@@ -254,35 +268,51 @@ your implementation (`cs1302.ce25.Tree`) should look:
    * After you've confirmed that it compiles and runs, please add and commit
      your changes to the repository.
 
-![CP](https://img.shields.io/badge/Checkpoint-3-success?style=for-the-badge)
+<hr/>
+
+![CP](https://img.shields.io/badge/Just%20Finished%20Checkpoint-3-success?style=for-the-badge)
+
+<hr/>
+
+### Submission Steps
 
 **Each student needs to individually submit their own work.**
 
-1. Create a plain text file called `SUBMISSION.md` directly inside this exercise
-   directory with the following information:
+1. Create a plain text file called `SUBMISSION.md` directly inside the `cs1302-ce25`
+   directory with the following information.
 
    1. Your name and UGA ID number;
    1. Collaborator names, if any; and
-   1. The weekly code (listed with the exercise on eLC).
+   1. If you created the API website, include the full link to the site you generated.
    
-   Here is an example:
+   Here is an example of the contents of `SUBMISSION.md`.
    
    ```
    1. Sally Smith (811-000-999)
    2. Collaborators: Joe Allen, Stacie Mack
-   3. Weekly Code: replace-with-actual-code
+   3. https://webwork.cs.uga.edu/~user/cs1302-ce25-doc
    ```
 
-1. Add and commit `SUBMISSION.md`. Also, do a final check to ensure your code 
-   passes the `checkstyle` audit, then stage and commit all changes, if needed.
+1. Change directories to the parent of `cs1302-ce25` (e.g., `cd ..` from `cs1302-ce25`). If you would like
+   to make a backup tar file, the instructions are in the submissions steps for [ce02](https://github.com/cs1302uga/cs1302-ce02).
+   We won't repeat those steps here and you can view them as optional.
+   
+1. Use the `submit` command to submit this exercise to `csci-1302`:
+   
+   ```
+   $ submit cs1302-ce25 csci-1302
+   ```
+   
+   Read the output of the submit command very carefully. If there is an error while submitting, then it will displayed 
+   in that output. Additionally, if successful, the submit command creates a new receipt file in the directory you 
+   submitted. The receipt file begins with rec and contains a detailed list of all files that were successfully submitted. 
+   Look through the contents of the rec file and always remember to keep that file in case there is an issue with your submission.
 
-1. Change into the parent directory and use the `submit` command to submit this exercise to `cs1302a`:
-   
-   ```
-   $ submit cs1302-ce25 cs1302a
-   ```
-   
-![CP](https://img.shields.io/badge/Checkpoint-Submission-success?style=for-the-badge)
+   **Note:** You must be on Odin to submit.
+
+<hr/>
+
+![CP](https://img.shields.io/badge/Just%20Finished-Submission-success?style=for-the-badge)
 
 <hr/>
 
