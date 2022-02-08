@@ -13,7 +13,7 @@ alternative to iteration in solving problems. Observe the difference between res
 
 ## References and Prerequisites
 
-* [`java.io.File` API Documentation](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/File.html)
+* [`java.io.File` API Documentation](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/io/File.html)
 * [`CSCI 1302 Recursion Tutorial`](https://github.com/cs1302uga/cs1302-tutorials/blob/master/recursion.md)
 
 ## Questions
@@ -121,7 +121,7 @@ Here is an example of its execution (which assumes there's a file called `Find.j
    * Make sure your code passes `checkstyle` then add and commit your changes to the repository.
 
 1. Use streams in the `main` method to map all of the command-line arguments
-   to new [`File`](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/File.html)
+   to new [`File`](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/io/File.html)
    objects, then call `printFile` for-each of them. For testing 
    purposes, you may want to put some kind of print statement in the `printFile` method.
    At this point, you can remove (or comment out) the line in `main` that prints all command-line
